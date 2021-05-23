@@ -32,7 +32,6 @@ const Weather = () => {
         return response.json();
       })
       .then((response) => {
-        console.table(response.current);
         setWeather(response.current);
         setLoading(false);
       });
