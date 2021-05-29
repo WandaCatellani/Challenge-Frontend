@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import $ from "jquery";
 import WeatherTable from "../Table/WeatherTable";
 
 const Weather = () => {

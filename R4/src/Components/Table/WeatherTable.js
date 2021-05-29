@@ -3,10 +3,10 @@ import Table from "react-bootstrap/Table";
 import "./WeatherTable.scss";
 
 const WeatherTable = ({ weather }) => {
-  delete weather.weather_icons;
+  let { weather_icons, ...weatherObject } = weather;
 
-  let weatherKeys = Object.keys(weather);
-  let weatherValues = Object.values(weather);
+  let weatherKeys = Object.keys(weatherObject);
+  let weatherValues = Object.values(weatherObject);
 
   return (
     <section className="weatherTable">
